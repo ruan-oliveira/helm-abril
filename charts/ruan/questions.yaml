@@ -1,0 +1,12 @@
+rancher_max_version: 2.6.4
+categories:
+- application
+labels:
+  app: ruan
+questions:
+- variable: repository.image
+  default: "nginx"
+  description: "Informe a imagem da app"
+  label: Informe a imagem da app
+  type: string
+  group: Imagem Docker
