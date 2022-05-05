@@ -1,8 +1,7 @@
 labels:
  io.cattle.role: project # options are cluster/project
- turma: abril
 categories:
-- Application
+- application
 questions:
 - variable: defaultImage
   default: "true"
