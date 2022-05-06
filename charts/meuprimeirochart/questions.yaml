@@ -1,0 +1,27 @@
+rancher_min_version: 2.5.0
+categories:
+- Application
+label:
+  turma: boa
+questions:
+- variable: image.defaultImage
+  default: "true"
+  description: "Use default Nginx images"
+  label: Use Default Images
+  type: boolean
+  show_subquestion_if: false
+  group: "Images"
+  subquestions:
+  - variable: image.repository
+    default: nginx
+    description: "Informe a imagem da aplicacao"
+    type: string
+    label: Informe a imagem
+    group: "Images"
+  - variable: image.tag
+    default: 1.16.0
+    description: "Informe a tag da imagem"
+    type: string
+    label: Informa a tag
+    group: "Images"
+
